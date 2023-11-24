@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blok Aljabar</title>
+    <link rel="stylesheet" href="aljabar.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sidebar">
+      <div class="nav-header">
+        <p class="logo">HamKa</p>
+        <i class="bx bx-menu btn-menu"></i>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <i class="bx bx-search search-btn"></i>
+          <input type="text" placeholder="search..." />
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-home-alt-2"></i>
+            <span class="title">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-book-alt"></i>
+            <span class="title">Courses</span>
+          </a>
+          <span class="tooltip">Courses</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-wrench"></i>
+            <span class="title">Alat</span>
+          </a>
+          <span class="tooltip">Alat Peraga</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-user"></i>
+            <span class="title">Kontak</span>
+          </a>
+          <span class="tooltip">Kontak</span>
+        </li>
+      </ul>
+      </section>
+    <section class="home">
+      <p>Blok Aljabar</p>
+      <table border="1"  id="tabel1" align="center">
+        <tr>
+            <!-- <td> Hijau
+            </td> -->
+            <td>Merah</td>
+            <td>Biru</td>
+            <td colspan="2">kuning</td>
+            <td rowspan="2" class="tombolselesai">
+                <div id="overlay">
+                    <div id="modal">
+                        <h2>Petunjuk</h2>
+                        <p>Jumlah kotak hijau menunjukkan Koefisien x<sup>2</sup></p>
+                        <p>Jumlah kotak merah & biru menunjukkan Koefisien x</p>
+                        <p>Hasil kali lebar dan tinggi kotak kuning menunjukkan konstanta</p>
+                        <br><br>
+                        <button id="close-modal">Close! 👋</button>
+                    </div>
+                </div>
+            
+                <button id="open-modal" class="petunjuk">Petunjuk. 📨</button>
+            </td>
+            
+        </tr>
+        <tr>
+            <!-- <td id="td1tabel1">
+                <button>Tambah</button>
+            </td> -->
+            <td id="td2tabel1">
+                <button>Tambah</button>
+            </td>
+            <td id="td3tabel1">
+                <button>Tambah</button>
+            </td>
+            <td id="td4tabel1">
+                Lebar
+                <button>Tambah</button>
+            </td>
+            <td id="td5tabel1">
+                Tinggi
+                <button>Tambah</button>
+            </td>            
+        </tr>
+    </table>
+
+    <br>
+     
+    
+    
+    <table id="tabel2" align="center" border="0">
+        <tr>
+            <td>
+                <table>
+                    <tr id="tr1tabel2">
+                        <td id="td1tabel2">
+                            <img src="img/hijau.png" alt="" id="hijau">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr id="tr2tabel2">
+                        <td>
+                            <img src="img/merah.png" alt="" id="merah">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table id="subtabel1">
+                    <tr id="tr3tabel2">
+                        <td>
+                            <img src="img/biru.png" alt="" id="biru">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table id="subtabel2">
+                    <tr id="tr4tabel2">
+                        <td id="td2tabel2 ">
+                            <img src="img/kuning.png" alt="" id="kuning">
+                            
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table class="kesimpulan">
+        <tr>
+            <td id="kesimpulan">
+                Kesimpulan : 
+            </td>
+            <td>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+            </td>
+        </tr>
+
+    </table>
+    </div>
+    <br><br>    
+    </section>
+
+    <script src="aljabar.js"></script>
+
+
+  </body>
+</html>
